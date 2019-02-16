@@ -6,13 +6,11 @@
 </template>
 
 <script>
-import Hauptteil from "./components/Hauptteil.vue";
 import Oben from "./components/Oben.vue";
 
 export default {
   name: "app",
   components: {
-    Hauptteil,
     Oben
   }
 };
@@ -32,7 +30,7 @@ export default {
   box-sizing: border-box;
 
   /* width: 340px;
-height: 568px; */
+  height: 568px; */
   width: 400px;
   height: 700px;
   margin: auto;
