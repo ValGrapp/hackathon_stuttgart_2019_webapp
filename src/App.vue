@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <Oben/>
+    <Hauptteil msg="hallo"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Hauptteil from "./components/Hauptteil.vue";
+import Oben from "./components/Oben.vue";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    Hauptteil,
+    Oben
   }
 };
 </script>
@@ -24,5 +26,17 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+
+  /* width: 340px;
+height: 568px; */
+  width: 400px;
+  height: 700px;
+  margin: auto;
+  z-index: -10;
+  background: url("assets/iphone-se-png-5.png") no-repeat center;
 }
 </style>
